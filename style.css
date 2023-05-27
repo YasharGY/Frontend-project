@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-control {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-color: black !important;
+    border-bottom-width: 2px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    height: 30px;
+    border-radius: 0;
+
+}
+
+.navbar {
+    background-color: white !important;
+    background: transparent;
+}
+
+.fa-solid {
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+.fa-lg {
+    margin-top: 20px;
+
+}
+
+.carousel {
+    transition: opacity .3s ease !important;
+}
+
+
+.description {
+    font-size: xx-large;
+    margin-top: 100px;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.description>p {
+    font-size: large;
+
+}
+
+.description>h1 {
+    font-weight: 700;
+    font-size: 80px;
+}
+
+.description > button {
+    background: transparent;
+    height: 30px;
+    width: 160px;
+    font-size: large;
+    border-color: #a38b02;
+    color: #a38b02;
+
+}
+
+
+.carousel-item>img {
+    display: inline-block !important;
+    float: right;
+    width: 300px;
+    margin-right: 20%;
+}
+
+ span{
+    font-size:20px;
+}
+
+#sec-slide button{
+    display: block;
+    margin-top: 20px;
+}
+.container{
+   display: flex;
+   flex-direction: column; 
+    
+}
+
+.head{
+    width: 700px;
+}
+.head > p,
+.head span{
+    color: gray;
+    
+    
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.frst-obj{
+    height: min-content;
+  display: table;
+  flex: 1;
+    width: min-content;
+    margin-left: 15%;
+    margin-top: 160px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: 0.5;
+}
+.frst-obj:hover{
+    -webkit-transform: scale(1.1);
+}
+.frst-obj > img {
+   
+    width: 280px;
+    height: 300px;
+   
+    
+}
+.frst-obj > h2{
+    font-weight: 700;
+}
+.frst-obj > p,
+.frst-obj h2,
+.frst-obj span{
+    font-size:x-large;
+}
+
+
+
+.scnd-obj{
+    position: relative;
+   
+    margin-left: 130px;
+    align-items: center;
+    width: min-content;
+       
+    top: 60px;
+    -webkit-transition: all .2s ease-in-out;
+    transition: 0.5;
+}
+.text-container {
+    display: flex;
+    position: absolute;
+    right: 370px;
+    margin-top: 90px;
+    flex-direction: column;
+    margin-left: 10px; 
+}
+.text-container > h2{
+    font-weight: 700;
+}
+
+.scnd-obj:hover{
+    -webkit-transform: scale(1.1);
+}
+
+.scnd-obj > img {
+   
+    width: 400px;
+    height: 450px;
+   
+    
+}
+
+.thrd-obj{
+    position: relative;
+   margin-top: 20px;
+    height: min-content;
+    align-items: center;
+    width: min-content;
+     left: 100px;
+  
+    -webkit-transition: all .2s ease-in-out;
+    transition: 0.5;
+}
+
+.thrd-obj:hover{
+    -webkit-transform: scale(1.1);
+}
+
+.thrd-obj > img {
+   
+    width: 400px;
+    height: 450px;
+   
+    
+}
+
+
+.frth-obj{
+    position: relative;
+    height: min-content;
+  display: table;
+  flex: 1;
+    width: min-content;
+    margin-left: 250px;
+  
+  top: 50px;
+    
+    -webkit-transition: all .2s ease-in-out;
+    transition: 0.5;
+}
+.frth-obj:hover{
+    -webkit-transform: scale(1.1);
+}
+.frth-obj > img {
+   
+    width: 280px;
+    height: 300px;
+   
+    
+}
+.frth-obj > h2{
+    font-weight: 700;
+}
+.frth-obj > p,
+.frth-obj h2,
+.frth-obj span{
+    font-size:x-large;
+}
+
+
+.fth-obj{
+    position: relative;
+    height: min-content;
+  display: table;
+  flex: 1;
+    width: min-content;
+  margin-left: 30px;
+  top: 90px;
+    
+    -webkit-transition: all .2s ease-in-out;
+    transition: 0.5;
+}
+.fth-obj:hover{
+    -webkit-transform: scale(1.1);
+}
+.fth-obj > img {
+   
+    width: 180px;
+    height: 200px;
+   
+    
+}
+.fth-obj > h2{
+    font-weight: 700;
+}
+.fth-obj > p,
+.fth-obj h2,
+.fth-obj span{
+    font-size:x-large;
+}
+
+
+
+.sth-obj{
+    position: relative;
+   margin-top: 70px;
+   margin-right: 290px;
+    height: min-content;
+    align-items: center;
+    width: min-content;
+     left: 100px;
+  
+    -webkit-transition: all .2s ease-in-out;
+    transition: 0.5;
+}
+
+.sth-obj:hover{
+    -webkit-transform: scale(1.1);
+}
+
+.sth-obj > img {
+   
+    width: 450px;
+    height: 400px;
+   
+    
+}
+
+.text-cont {
+    display: flex;
+    width: max-content;
+    position: absolute;
+    right: 420px;
+    margin-top: 90px;
+    flex-direction: column;
+    margin-left: 10px; 
+}
+.text-cont > h2{
+    font-weight: 700;
+}
+.black-white{
+   position: relative;
+   height: 450px;
+    width: 100%;
+   min-height: ;
+     margin-top: 100px;
+     background-color: lightcyan;
+     box-sizing: border-box;
+   }
+ .content-2{
+    flex: 1;
+    position: relative;
+    margin-left: 180px;
+ }
+
+ .content-2 > span{
+    color: red;
+    width: 200px;
+    font-weight: 500;
+    letter-spacing:5px;
+
+    
+ }
+
+ .content-2 > h2 {
+    font-size:xx-large;
+    font-weight: 900;
+    width: 400px;
+ }
+#countdown li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+ #countdown li span {
+    
+    font-size: 4.5rem;
+  }
+  
+  
+  .oldprice{
+    display: inline-block;
+    text-decoration: line-through;
+  }
+  
+  .newprice{
+    display: inline-block;
+  }
+  
+  .discount{
+    font-family:'Franklin Gothic Small', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(226, 59, 59);
+    color: rgb(243, 235, 235);
+    border-radius: 5px;
+    width: 55px;
+    height: 35px;
+  }
+  
+#countdown{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 10px;
+    margin-top: 20px;
+   margin-left: 175px;
+   background-color: white;
+   width: fit-content;
+}
+
+.black-white > img{
+position: absolute;
+right: 10px;
+top: 20px;
+width: 300px;
+height: 450px;
+background-color: none;
+}
+
+.shop-now{
+    margin-left: 190px;
+    background-color: transparent;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.shop-now:hover{
+    background-color: black;
+    color: white;
+    
+}
+
+
