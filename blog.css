@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-control {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-color: black !important;
+    border-bottom-width: 2px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    height: 30px;
+    border-radius: 0;
+
+}
+
+.navbar {
+    background-color: transparent !important; /* Set the background color to transparent */
+    position: absolute; /* Position the navbar absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1; 
+    
+
+}
+
+.fa-solid {
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+.fa-lg {
+    margin-top: 20px;
+
+}
+
+.thumbnail {
+    position: relative;
+    height: 100vh; /* Adjust the height as needed */
+    width: 100%;
+    overflow: hidden; /* Hide any overflowing content */
+    z-index: -1; /* Set a negative z-index to position the image behind other elements */
+}
+
+.thumbnail::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay for better visibility of content */
+    z-index: -1; /* Set a negative z-index to position the overlay behind other elements */
+}
+
+.thumbnail::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.5; /* Adjust the opacity of the image overlay as desired */
+    background-image: url('./images/blog images/blog-2.jpg'); /* Set the same image as the background */
+    background-size: contain;
+    background-position: center;
+    z-index: -2; /* Set a negative z-index to position the image overlay behind other elements */
+}
+.thumbnail-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.head-content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.home{
+    display: inline-block;
+    color: goldenrod;
+}
+.blog{
+    display: inline-block;
+    color: gray;
+    font-weight: 600;
+}
+
+/* Additional styling for the content */
+.head-content p,
+.head-content h1,
+.head-content span {
+    margin: 0;
+    padding: 10px;
+}
+
+.head-content h1{
+    color: black;
+    font-weight: 900;
+}
+.head-content span{
+    color: rgb(51, 50, 50);
+}
+.container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /* Adjust the gap between images as needed */
+    column-gap: 40px;
+    row-gap: 80px;
+    position: relative;
+    
+  }
+  
+  .image-item {
+    position: relative;
+    right: 100px;
+    top: 60px;
+    padding: 10px;
+
+  }
+  
+  .image-content {
+    position: absolute;
+    
+    left: 0;
+    width: 100%;
+   
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-title,
+  .image-description {
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .image-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Adjust the object-fit property as needed */
+    max-height: 200px; /* Adjust the max-height as needed */
+  }
+  
+  .image-content p{
+  position: absolute;
+  right: 20px;
+  bottom: -10px;
+    color: rgb(182, 180, 180);
+    font-weight: 700;
+   
+
+  }
+
+  .image-content span{
+    margin-right: 120px;
+
+    color: goldenrod;
+
+  }
+
+ 
