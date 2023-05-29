@@ -21,7 +21,7 @@
     background-color: white !important;
     background: transparent;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) !important;
-    height: 80px;
+    height: 60px;
 }
 
 .fa-solid {
@@ -34,3 +34,62 @@
 
 }
 
+ 
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left-hr {
+    position: relative;
+    margin-left: 150px;
+    top: -100px;
+    flex: 1;
+    
+  }
+  .left-hr hr{
+    width: 100px;
+    
+    
+  }
+.left-old{
+    position: relative;
+    margin-left: 150px;
+    top: -30px;
+    flex: 1;
+     
+}
+
+.left-old hr{
+    width: 100px;
+    
+}
+  .right-hr {
+    position: relative;
+    margin-top: 30px;
+    padding: 30px;
+    font-size: larger;
+    right: 130px;
+    
+    
+    flex: 1;
+   
+  }
+
+  .right-hr p{
+    color: goldenrod;
+    
+  }
+
+  .right-hr h1{
+    font-weight: 900;
+    font-size: 50px;
+  } 
+  .right-hr span{
+    
+    color: rgb(175, 175, 175);
+    font-weight: 700;
+    
+  }
