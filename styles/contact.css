@@ -148,3 +148,25 @@
     width: 300px;
     
 }
+
+.map{
+    background-color: rgb(163, 161, 161);
+    margin-top: 50px;
+    display: flex;
+}
+iframe{
+    margin-left: 5px;
+}
+
+.map-content{
+    margin-left: 150px;
+    
+}
+.mapContent{
+    display: flex;
+    gap: 40px;
+    width: min-content;
+}
+.mapContent p{
+    height: 150px;
+}
