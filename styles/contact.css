@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.form-control {
+    border-top: none !important;
+    border-right: none !important;
+    border-left: none !important;
+    border-color: black !important;
+    border-bottom-width: 2px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    height: 30px;
+    border-radius: 0;
+
+}
+
+.navbar {
+    background-color: transparent !important;
+    /* Set the background color to transparent */
+    position: absolute;
+    /* Position the navbar absolutely */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+
+
+}
+
+.fa-solid {
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+.fa-lg {
+    margin-top: 20px;
+
+}
+
+.thumbnail {
+    position: relative;
+    height: 100vh;
+    /* Adjust the height as needed */
+    width: 100%;
+    overflow: hidden;
+    /* Hide any overflowing content */
+    z-index: -1;
+    /* Set a negative z-index to position the image behind other elements */
+}
+
+.thumbnail::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Add a semi-transparent overlay for better visibility of content */
+    z-index: -1;
+    /* Set a negative z-index to position the overlay behind other elements */
+}
+
+.thumbnail::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.5;
+    /* Adjust the opacity of the image overlay as desired */
+    background-image: url('./images/blog images/blog-2.jpg');
+    /* Set the same image as the background */
+    background-size: contain;
+    background-position: center;
+    z-index: -2;
+    /* Set a negative z-index to position the image overlay behind other elements */
+}
+
+.thumbnail-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-image: url('https://github.com/00AliNuri/FinalTaskFront/blob/main/assets/images/maarten-deckers-0-frPETzEVs-unsplash.jpg?raw=true'); 
+    justify-content: center;
+    background-size:contain;
+    height: 100vh;
+    overflow: hidden;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+
+.thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.head-content {
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.home {
+    display: inline-block;
+    color: goldenrod;
+}
+
+.blog {
+    display: inline-block;
+    color: gray;
+    font-weight: 600;
+}
+
+.addres{
+    
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+
+.content h2{
+    font-weight: 800;
+
+}
+.content p{
+    margin-top: 20px;
+    color: rgb(207, 207, 207);
+    font-weight: 600;
+    width: 300px;
+    
+}
