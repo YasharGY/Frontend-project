@@ -3,6 +3,66 @@
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  color: #343a40;
+  background: #e9ecef;
+  position: relative;
+
+}
+
+.col-1 {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fa-phone{
+  position: relative;
+  bottom: 15px;
+  left: 50px;
+}
+
+p {
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.fa-twitter {
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+.col-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 200px;
+}
+
+.dropdown .btn {
+
+  background-color: transparent;
+  color: black;
+  font-weight: bold;
+  border: none;}
+
+  &:hover {
+      background-color: transparent;
+      color: black;
+      font-weight: bold;
+      border: none;
+
+
+  }
 
 .form-control {
     border-top: none !important;
@@ -18,13 +78,12 @@
 }
 
 .navbar {
-    background-color: transparent !important; /* Set the background color to transparent */
-    position: absolute; /* Position the navbar absolutely */
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1; 
-    
+  background-color: transparent !important;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 
 }
 

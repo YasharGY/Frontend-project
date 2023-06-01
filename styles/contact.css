@@ -4,6 +4,69 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 100%;
+    color: #343a40;
+    background: #e9ecef;
+    position: relative;
+
+}
+
+.col-1 {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fa-phone{
+    position: relative;
+    bottom: 15px;
+    left: 50px;
+}
+
+p {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fa-twitter {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+.col-3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.dropdown .btn {
+
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    border: none;}
+
+    &:hover {
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+        border: none;
+
+
+    }
+
+
+
 .form-control {
     border-top: none !important;
     border-right: none !important;
@@ -19,10 +82,8 @@
 
 .navbar {
     background-color: transparent !important;
-    /* Set the background color to transparent */
     position: absolute;
-    /* Position the navbar absolutely */
-    top: 0;
+    top: 30px;
     left: 0;
     width: 100%;
     z-index: 1;
@@ -43,12 +104,9 @@
 .thumbnail {
     position: relative;
     height: 100vh;
-    /* Adjust the height as needed */
     width: 100%;
     overflow: hidden;
-    /* Hide any overflowing content */
     z-index: -1;
-    /* Set a negative z-index to position the image behind other elements */
 }
 
 .thumbnail::before {
@@ -59,9 +117,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Add a semi-transparent overlay for better visibility of content */
     z-index: -1;
-    /* Set a negative z-index to position the overlay behind other elements */
 }
 
 .thumbnail::after {
@@ -75,25 +131,22 @@
     min-width: 100%;
     min-height: 100%;
     opacity: 0.5;
-    /* Adjust the opacity of the image overlay as desired */
     background-image: url('./images/blog images/blog-2.jpg');
-    /* Set the same image as the background */
     background-size: contain;
     background-position: center;
     z-index: -2;
-    /* Set a negative z-index to position the image overlay behind other elements */
 }
 
 .thumbnail-container {
     position: relative;
     display: flex;
     align-items: center;
-    background-image: url('https://github.com/00AliNuri/FinalTaskFront/blob/main/assets/images/maarten-deckers-0-frPETzEVs-unsplash.jpg?raw=true'); 
+    background-image: url('https://github.com/00AliNuri/FinalTaskFront/blob/main/assets/images/maarten-deckers-0-frPETzEVs-unsplash.jpg?raw=true');
     justify-content: center;
-    background-size:contain;
+    background-size: contain;
     height: 100vh;
     overflow: hidden;
-    background-attachment: fixed; 
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 
@@ -125,8 +178,8 @@
     font-weight: 600;
 }
 
-.addres{
-    
+.addres {
+
     align-items: center;
     justify-content: center;
     justify-content: space-around;
@@ -137,36 +190,238 @@
     background-color: rgb(255, 255, 255);
 }
 
-.content h2{
+.content h2 {
     font-weight: 800;
 
 }
-.content p{
+
+.content p {
     margin-top: 20px;
     color: rgb(207, 207, 207);
     font-weight: 600;
     width: 300px;
-    
+
 }
 
-.map{
-    background-color: rgb(163, 161, 161);
+.map {
+    background-color: rgb(231, 231, 231);
+    align-items: center;
     margin-top: 50px;
     display: flex;
 }
-iframe{
+
+iframe {
     margin-left: 5px;
 }
 
-.map-content{
+.map-content {
     margin-left: 150px;
-    
+
 }
-.mapContent{
+
+.map-content h1 {
+    color: rgb(190, 190, 190);
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+.mapContent {
     display: flex;
     gap: 40px;
     width: min-content;
 }
-.mapContent p{
+
+.mapContent p {
     height: 150px;
+}
+
+.left {
+    position: relative;
+    top: 150px;
+    left: 100px;
+
+}
+
+.left h1 {
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.right {
+    position: relative;
+    right: -400px;
+    width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    bottom: 100px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+
+
+.form-group input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 500px;
+    border-bottom: 1px solid;
+    padding: 15px;
+}
+
+.form-group input:focus {
+    outline: none;
+}
+
+.form-group textarea {
+    width: 400px;
+    padding: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.form-group textarea:focus {
+    outline: none;
+}
+
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: inherit;
+    color: goldenrod;
+    border: 1px solid;
+    border-color: goldenrod;
+    cursor: pointer;
+}
+
+.service {
+    position: relative;
+    height: 260px;
+    margin-top: 180px;
+    background-color: rgb(241, 240, 240);
+}
+
+.support>i {
+    position: relative;
+    top: 25px;
+    right: 30px;
+}
+
+.support {
+    display: inline-block;
+    margin-left: 80px;
+    margin-top: 70px;
+}
+
+#description h4 {
+    font-weight: 900;
+}
+
+#description p {
+    color: rgb(175, 175, 175);
+    font-weight: 700;
+}
+
+.block-container {
+    display: flex;
+}
+
+.block {
+    margin-top: 30px;
+    display: inline-block;
+    margin-right: 20px;
+
+
+
+
+
+}
+
+.block li {
+    font-size: 16px;
+    font-weight: 900;
+    color: rgb(221, 220, 220);
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 50px;
+    width: max-content;
+
+}
+
+
+#email {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 30px;
+
+}
+
+#email:focus {
+    outline: none;
+}
+
+.fa-regular {
+    position: relative;
+    top: 5px;
+    right: 12px;
+}
+
+.block p {
+    font-weight: 900;
+
+    margin-left: 30px;
+}
+
+.block h4 {
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+
+.block span {
+    color: rgb(219, 217, 217);
+    width: max-content;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-weight: 700;
+    font-size: medium;
+}
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: none;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse.show .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-collapse.show .nav-item {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .addres {
+        display: flex;
+        flex-direction: column;
+    }
+
 }
