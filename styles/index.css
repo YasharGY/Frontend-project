@@ -11,7 +11,7 @@
     height: 40px;
     width: 100%;
     color: #343a40;
-    background: #e9ecef;
+    background: #f5f6f8;
     position: relative;
 
 }
@@ -102,6 +102,7 @@ p {
 .fa-solid {
     margin-top: 20px;
     margin-right: 60px;
+    
 }
 
 .fa-lg {
@@ -518,7 +519,7 @@ position: absolute;
     border: none;
     display: flex;
     flex-direction: column;
-    width: calc(25% - 10px); /* Adjust the width as needed */
+    width: calc(25% - 10px); 
   margin-bottom: 20px;
     position: relative;
     width: 250px;
